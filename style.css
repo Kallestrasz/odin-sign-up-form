@@ -40,12 +40,15 @@ body{
     .logo{
         position: relative;
         justify-content: center;
+        margin: 5rem 0;
     }
     .imgContainer{
         width: auto;
     }
     .mainContainer{
         align-self: center;
+        max-width: 85%;
+        padding: 1rem;
     }
 }
 
