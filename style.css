@@ -16,6 +16,14 @@ body{
     font-size: 2rem;
 }
 
+.imgContainer{
+    background-image: url(images/image.avif);
+    width: 26.3rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke
+}
+
 .logo{
     position: fixed;
     display: flex;
@@ -25,13 +33,16 @@ body{
     padding: 1rem 5rem;
 }
 
-.imgContainer{
-    background-image: url(images/image.avif);
-    width: 26.3rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: whitesmoke
+form{
+    display: grid;
+    grid-template-columns: repeat(2, 10rem);
+    gap: 1rem;
 }
+
+.input{
+    font-size: 0.75rem;
+}
+
 
 @media (max-width: 1080px) {
     body{
@@ -50,6 +61,19 @@ body{
         max-width: 85%;
         padding: 1rem;
     }
+}
+
+
+input{
+    border-radius: 0.5rem;
+}
+
+input:invalid {
+	border: solid red;
+}
+
+input:valid {
+	border: solid green;
 }
 
 button{
