@@ -41,33 +41,15 @@ body{
     padding: 1rem 5rem;
 }
 
-@media (max-width: 1080px) {
-    body{
-        flex-direction: column;
-    }
-    .logo{
-        width: auto;
-        margin: 5rem 0;
-    }
-    .imgContainer{
-        width: auto;
-    }
-    .mainContainer{
-        align-self: center;
-        max-width: 85%;
-        padding: 1rem;
-    }
-}
-
-.input{
-    font-size: 0.75rem;
-}
-
 form{
     display: grid;
     grid-template-columns: repeat(2, 15rem);
     row-gap: 1rem;
     column-gap: 3rem;
+}
+
+.input{
+    font-size: 0.75rem;
 }
 
 input{
@@ -108,4 +90,26 @@ a{
 
 .description span{
     font-style: italic;
+}
+
+@media (max-width: 1080px) {
+    body{
+        flex-direction: column;
+    }
+    .logo{
+        width: auto;
+        margin: 5rem 0;
+    }
+    .imgContainer{
+        width: auto;
+    }
+    .mainContainer{
+        align-self: center;
+        max-width: 85%;
+        padding: 1rem;
+    }
+    form{
+        align-self:center;
+        grid-template-columns: 15rem;
+    }
 }
