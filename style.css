@@ -9,6 +9,8 @@ body{
 }
 
 .mainContainer{
+    display: flex;
+    flex-direction: column;
     max-width: 50%;
     padding: 4rem; 
     font-size: 2rem;
@@ -31,7 +33,21 @@ body{
     color: whitesmoke
 }
 
-
+@media (max-width: 1080px) {
+    body{
+        flex-direction: column;
+    }
+    .logo{
+        position: relative;
+        justify-content: center;
+    }
+    .imgContainer{
+        width: auto;
+    }
+    .mainContainer{
+        align-self: center;
+    }
+}
 
 button{
   font-family: inherit;
