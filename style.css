@@ -108,6 +108,10 @@ a{
         max-width: 85%;
         padding: 1rem;
     }
+    
+}
+
+@media (max-width: 480px){
     form{
         align-self:center;
         grid-template-columns: 15rem;
